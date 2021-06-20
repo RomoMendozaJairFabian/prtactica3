@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package g4s22p3lfrs;
+package g4s22p3rmjf;
 
 /**
  *
  * @author Ana Cecilia
  */
-public class FrmDivisión extends javax.swing.JDialog {
+public class FrmResta extends javax.swing.JDialog {
 
     /**
-     * Creates new form FrmDivisión
+     * Creates new form FrmResta
      */
-    public FrmDivisión(java.awt.Frame parent, boolean modal) {
+    public FrmResta(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -28,8 +28,6 @@ public class FrmDivisión extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
-        txtnum1 = new javax.swing.JTextField();
         txtnum2 = new javax.swing.JTextField();
         btnCalculo = new javax.swing.JButton();
         btnCerrar = new javax.swing.JButton();
@@ -37,10 +35,10 @@ public class FrmDivisión extends javax.swing.JDialog {
         txtresultado = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtnum1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-
-        jLabel3.setText("Segundo número");
 
         txtnum2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,9 +68,11 @@ public class FrmDivisión extends javax.swing.JDialog {
             }
         });
 
-        jLabel1.setText("División de dos numeros");
+        jLabel1.setText("Resta de dos numeros");
 
         jLabel2.setText("Primer número");
+
+        jLabel3.setText("Segundo número");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -139,7 +139,7 @@ public class FrmDivisión extends javax.swing.JDialog {
 
     private void btnCalculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculoActionPerformed
         // TODO add your handling code here:
-        txtresultado.setText(String.valueOf(Integer.parseInt(txtnum1.getText().toString())/Integer.parseInt(txtnum2.getText().toString())));
+        txtresultado.setText(String.valueOf(Integer.parseInt(txtnum1.getText().toString())-Integer.parseInt(txtnum2.getText().toString())));
     }//GEN-LAST:event_btnCalculoActionPerformed
 
     private void txtresultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtresultadoActionPerformed
@@ -168,20 +168,20 @@ public class FrmDivisión extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmDivisión.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmResta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmDivisión.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmResta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmDivisión.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmResta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmDivisión.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmResta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                FrmDivisión dialog = new FrmDivisión(new javax.swing.JFrame(), true);
+                FrmResta dialog = new FrmResta(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

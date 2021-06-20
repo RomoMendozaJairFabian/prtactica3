@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package g4s22p3lfrs;
+package g4s22p3rmjf;
 
 /**
  *
  * @author Ana Cecilia
  */
-public class FrmSuma extends javax.swing.JDialog {
+public class FrmMultiplicación extends javax.swing.JDialog {
 
     /**
-     * Creates new form FrmSuma
+     * Creates new form FrmMultiplicación
      */
-    public FrmSuma(java.awt.Frame parent, boolean modal) {
+    public FrmMultiplicación(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -40,7 +40,7 @@ public class FrmSuma extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel1.setText("Suma de dos numeros");
+        jLabel1.setText("Muktiplicación de dos numeros");
 
         jLabel2.setText("Primer número");
 
@@ -104,7 +104,7 @@ public class FrmSuma extends javax.swing.JDialog {
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(10, 10, 10)
                                     .addComponent(txtresultado, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(130, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -137,14 +137,14 @@ public class FrmSuma extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtnum2ActionPerformed
 
+    private void btnCalculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculoActionPerformed
+        // TODO add your handling code here:
+        txtresultado.setText(String.valueOf(Integer.parseInt(txtnum1.getText().toString())*Integer.parseInt(txtnum2.getText().toString())));
+    }//GEN-LAST:event_btnCalculoActionPerformed
+
     private void txtresultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtresultadoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtresultadoActionPerformed
-
-    private void btnCalculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculoActionPerformed
-        // TODO add your handling code here:
-         txtresultado.setText(String.valueOf(Integer.parseInt(txtnum1.getText().toString())+Integer.parseInt(txtnum2.getText().toString())));
-    }//GEN-LAST:event_btnCalculoActionPerformed
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         // TODO add your handling code here:
@@ -168,20 +168,20 @@ public class FrmSuma extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmSuma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMultiplicación.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmSuma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMultiplicación.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmSuma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMultiplicación.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmSuma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMultiplicación.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                FrmSuma dialog = new FrmSuma(new javax.swing.JFrame(), true);
+                FrmMultiplicación dialog = new FrmMultiplicación(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
